@@ -1,0 +1,140 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bc1"
+    
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/textAuthor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="@string/equipment"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/equipment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/textAuthor"
+            android:text="@string/now_equipment"
+            android:textColor="#13f854"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/equipment"
+            android:text="@string/State"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/mtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/textView3"
+            android:text="@string/title_not_connected"
+            android:textColor="#13f854"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/BTN_CLEAR_DOWN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:text="@string/TEXT_CLEAR" />
+
+        <EditText
+            android:id="@+id/ET_SEND"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/BTN_CLEAR_DOWN"
+            android:layout_alignBottom="@+id/BTN_CLEAR_DOWN"
+            android:layout_toLeftOf="@+id/BTN_SEND"
+            android:layout_toRightOf="@+id/equipment"
+            android:ems="10"
+            android:hint="@string/HINT_SEND" >
+
+            <requestFocus android:layout_width="wrap_content" />
+        </EditText>
+
+        <Button
+            android:id="@+id/BTN_SEND"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:text="@string/TEXT_SEND" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/BTN_SEND"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/BTN_ITEM"
+            android:layout_toRightOf="@+id/BTN_ITEM"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/TV_RECEIVE"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/BTN_SEND"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/BTN_ITEM"
+                android:layout_toRightOf="@+id/BTN_ITEM"
+                android:layout_weight="1.14"
+                android:fadeScrollbars="false"
+                android:height="10dp"
+                android:hint="@string/HINT_RECEIVE"
+                android:scrollbars="vertical" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/BTN_SAVE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/BTN_ITEM"
+            android:layout_toLeftOf="@+id/linearLayout1"
+            android:text="@string/TEXT_SAVE" />
+
+        <Button
+            android:id="@+id/BTN_ITEM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textAuthor"
+            android:text="@string/TEXT_ITEM" />
+
+        <Button
+            android:id="@+id/BTN_CLEAR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/BTN_SAVE"
+            android:layout_toLeftOf="@+id/linearLayout1"
+            android:text="@string/TEXT_CLEAR" />
+
+        <Button
+            android:id="@+id/BTN_STOP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/BTN_CLEAR"
+            android:text="@string/TEXT_STOP" />
+
+    </RelativeLayout>
+
+</LinearLayout>
